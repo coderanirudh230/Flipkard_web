@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="../style/checkout.css">
+</head>
+<body>
+    <div class="checkout-container">
+        <h2>Delivery Address</h2>
+
+        <form id="AddressForm">
+            <input type="text" placeholder="Full Name">
+            <input type="text" placeholder="Address">
+            <input type="text" placeholder="City">
+            <input type="text" placeholder="State">
+            <input type="text" placeholder="Pin Code">
+            <textarea placeholder="Full Address" required></textarea>
+
+            <button type="submit">Save Address</button>
+        </form>
+    </div>
+    <form>
+        <h2>Payment Options</h2>
+        <div class="payment-options">
+            <label>
+                <input  type="radio" name="payment" value="upi">
+            </label>
+            <label>
+                <input type="radio" name="payment" value="card">
+            </label>
+
+            <label>
+                <input type="radio" name="payment" value="cod">Cash on Delivery
+            </label>
+        </div>
+        <button class="place-order">Place Order</button>
+    </form>
+</body>
+</html>

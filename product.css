@@ -1,0 +1,151 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    padding: 40px;
+}
+
+/* Container */
+.container {
+    display: flex;
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+/* Left Image Section */
+.product-image {
+    flex: 1;
+}
+
+/* Main Image */
+.main-img {
+    width: 100%;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.main-img:hover {
+    transform: scale(1.05);
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.gallery img {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    cursor: pointer;
+    object-fit: cover;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    border: 2px solid #007bff;
+}
+
+/* Right Section */
+.product-details {
+    flex: 1;
+}
+
+/* Title */
+.title {
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Price */
+.price {
+    font-size: 22px;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+/* Rating */
+.rate {
+    font-size: 14px;
+    color: #ffc107;
+    margin-bottom: 15px;
+}
+
+/* Description */
+.details {
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Buttons */
+.button {
+    display: flex;
+    gap: 15px;
+}
+
+/* Add to Cart */
+.cart-btn {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(45deg, #ff9f00, #ff6a00);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cart-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255,106,0,0.4);
+}
+
+/* Buy Now */
+.buy-btn {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(45deg, #fb641b, #ff3c00);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buy-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255,60,0,0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .button {
+        flex-direction: column;
+    }
+}

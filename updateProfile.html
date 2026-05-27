@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../style/updateProfile.css">
+</head>
+<body>
+    <div id="profile" class="content-box">
+        <h2>My Profile</h2>
+        <div class="profile-detail">
+           <p><strong>Full Name</strong><span id="nameText">Anirudh Sharma</span></p>
+           <p><strong>Email</strong><span id="emailText">Airudh@gmail.com</span></p>
+           <p><strong>Address</strong><span id="addressText">123 Main Street, City, State, ZIP</span></p>
+           <p><strong>Phone</strong><span id="phoneText">+91 8963457225</span></p>
+
+           <button class="edit-btn"><i class="fa-solid fa-pencil"></i>Edit Profile</button>
+        </div>
+        <!-- hidden-edit Form -->
+         <div class="edit-form" id="editForm">
+            <input type="text" id="newInput" placeholder="Full Name">
+            <input type="text" id="emailInput" placeholder="Email">
+            <input type="text" id="addressInput" placeholder="Address">
+            <textarea id="addressInput" placeholder="Address"></textarea>
+
+            <button type="submit">Save Changes</button>
+         </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* Container */
+body > div {
+    width: 800px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Wishlist Item */
+body > div > div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #f9fbfd;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+body > div > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* Image */
+body > div > div img {
+    width: 120px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Product Details */
+body > div > div h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.prices {
+    color: #28a745;
+    font-weight: 600;
+}
+
+.rating {
+    color: #ffc107;
+    font-size: 14px;
+}
+
+/* Buttons */
+.button {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+}
+
+/* Add to Cart */
+.add-cart {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-cart:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,114,255,0.4);
+}
+
+/* Remove */
+.remove {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #ff4d4d, #ff0000);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.remove:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255,0,0,0.4);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    body > div {
+        width: 100%;
+    }
+
+    body > div > div {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .button {
+        justify-content: center;
+        margin-left: 0;
+    }
+}

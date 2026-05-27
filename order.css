@@ -1,0 +1,139 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1f4037, #99f2c8);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+body > div {
+    width: 90%;
+    max-width: 1000px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+/* Header */
+thead {
+    background: rgba(255,255,255,0.2);
+}
+
+thead th {
+    padding: 15px;
+    text-align: left;
+    color: #fff;
+    font-weight: 500;
+}
+
+/* Rows */
+tbody tr {
+    background: rgba(255,255,255,0.1);
+    transition: 0.3s;
+}
+
+tbody tr:hover {
+    background: rgba(255,255,255,0.2);
+    transform: scale(1.01);
+}
+
+/* Cells */
+td {
+    padding: 12px;
+    color: #fff;
+}
+
+/* Product Image */
+td img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Status Styles */
+.deliverd {
+    color: #00ff9d;
+    font-weight: 600;
+}
+
+.pending {
+    color: #ffc107;
+    font-weight: 600;
+}
+
+.cancelled {
+    color: #ff4d4d;
+    font-weight: 600;
+}
+
+/* Badge Style (Advanced) */
+.deliverd::before {
+    content: "✔ ";
+}
+
+.pending::before {
+    content: "⏳ ";
+}
+
+.cancelled::before {
+    content: "✖ ";
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tbody tr {
+        margin-bottom: 15px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    td {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        color: #ddd;
+    }
+}

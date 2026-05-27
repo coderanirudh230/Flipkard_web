@@ -1,0 +1,141 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Container */
+.checkout-container {
+    width: 420px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Headings */
+h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Inputs */
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    transition: 0.3s;
+}
+
+/* Placeholder */
+form input::placeholder,
+form textarea::placeholder {
+    color: #ccc;
+}
+
+/* Focus Effect */
+form input:focus,
+form textarea:focus {
+    background: rgba(255,255,255,0.2);
+    transform: scale(1.02);
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover Button */
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 106, 0, 0.4);
+}
+
+/* Payment Section */
+form:nth-child(2) {
+    width: 420px;
+    padding: 25px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    color: white;
+}
+
+/* Payment Options */
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Custom Radio */
+.payment-options label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.payment-options label:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+/* Radio Input */
+.payment-options input[type="radio"] {
+    accent-color: #ff6a00;
+    transform: scale(1.2);
+}
+
+/* Place Order Button */
+.place-order {
+    margin-top: 20px;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+}
+
+.place-order:hover {
+    box-shadow: 0 5px 15px rgba(0, 114, 255, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .checkout-container,
+    form:nth-child(2) {
+        width: 90%;
+    }
+}
